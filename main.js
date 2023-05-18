@@ -34,3 +34,15 @@ function generateJokes() {
 			console.log("Error:", error);
 		});
 }
+
+function scoreJoke(score) {
+	currentJoke.score = score;
+	currentJoke.date = new Date().toISOString();
+
+	console.log(currentJoke.score);
+	console.log(currentJoke.date);
+
+	reportAcudit.push(currentJoke)
+
+	console.log(reportAcudit)
+}
