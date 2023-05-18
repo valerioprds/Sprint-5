@@ -26,8 +26,9 @@ function generateJokes() {
 
 			// Mostrar el chiste en pantalla
 
-			document.getElementById("jokesDisplayedHere").innerHTML = currentJoke.joke;
-			document.getElementById('scoreButtons').style.display = 'block'
+			document.getElementById("jokesDisplayedHere").innerHTML =
+				currentJoke.joke;
+			document.getElementById("scoreButtons").classList.remove("d-none");
 		})
 		.catch((error) => {
 			console.log("Error:", error);
